@@ -3,28 +3,24 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import User from "./User";
 import {getUserThunkCreator} from "../../redux/userReducer";
-import axios from "axios";
+import {useTranslation} from "react-i18next";
 
 function UserContainer (props){
 
+    const {t, i18n} = useTranslation()
     const [count, setCount] = useState(0);
-    const [users, setUsers] = useState([]);
 
-    useEffect(() => {
-        // debugger
-        props.getUserThunkCreator();
-    },[count])
-
-    // console.log(props)
+        useEffect(() => {
+            props.getUserThunkCreator();
+        }, [count])
 
     return (<div>
         <button onClick={() => {
             setCount(count+1)
-        }}>Load more
+        }}>{t('description.part7')}
         </button>
         <hr/>
         <User users={props.users}/>
-        {/*<User users={props.users}/>*/}
     </div>)
 }
 

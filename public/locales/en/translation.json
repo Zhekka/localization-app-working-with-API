@@ -1,0 +1,12 @@
+{
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "Name",
+    "part2": "Surname",
+    "part3": "User`s profile",
+    "part4": "Gender",
+    "part5": "Country",
+    "part6": "City",
+    "part7": "Load more"
+  }
+}

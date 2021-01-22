@@ -7,8 +7,5 @@ const instance = axios.create({
 export const usersAPI = {
     getUsers() {
         return instance.get('api/')
-            .then(response => {
-                return response.data.results
-            })
     }
 }

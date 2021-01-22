@@ -1,0 +1,14 @@
+{
+  "title": "Willkommen zu react und react-i18next",
+  "description": {
+    "part1": "Имя",
+    "part2": "Фамилия",
+    "part3": "Профиль пользователя",
+    "part4": "Пол",
+    "part5": "Страна",
+    "part6": "Город",
+    "part7": "Загрузить еще"
+
+
+  }
+}
