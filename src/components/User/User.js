@@ -1,5 +1,6 @@
 import React from 'react'
 import UserInfo from "./User.Info";
+import style from './User.module.css'
 
 export default function User(props) {
 
@@ -7,7 +8,7 @@ export default function User(props) {
         return <UserInfo key={data} users={data}/>
     })
 
-    return (<div>
+    return (<div className={style.content}>
         {showUserInfo}
     </div>)
 }

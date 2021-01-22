@@ -14,12 +14,12 @@ function UserContainer (props){
             props.getUserThunkCreator();
         }, [count])
 
-    return (<div>
+    return (<div >
         <button onClick={() => {
             setCount(count+1)
         }}>{t('description.part7')}
         </button>
-        <hr/>
+
         <User users={props.users}/>
     </div>)
 }

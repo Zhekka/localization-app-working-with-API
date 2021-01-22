@@ -1,21 +1,19 @@
 import React from 'react'
-import {Trans, useTranslation} from "react-i18next";
+import { useTranslation} from "react-i18next";
+import style from './Header.module.css'
+
 
 export default function Header() {
 
-    // const {t, i18n} = useTranslation()
-    //
-    // const changeL = (language) => {
-    //     i18n.changeLanguage(language)
-    // }
+    const { t, i18n } = useTranslation();
 
-    return (<div>
-            {/*<button onClick={() => changeL('en')}>En</button>*/}
-            {/*<button onClick={() => changeL('ru')}>Ru</button>*/}
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
 
-            {/*<Trans i18nKey={"description.part1"}>*/}
-            {/*    Hello*/}
-            {/*</Trans>*/}
+    return (<div className={style.content}>
+            <button onClick={() => changeLanguage("en")}>EN</button>
+            <button onClick={() => changeLanguage("ru")}>RU</button>
         </div>
     )
 }

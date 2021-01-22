@@ -34,7 +34,6 @@ export const getUserThunkCreator = () => {
     return (dispatch) => {
         usersAPI.getUsers()
             .then(response => {
-                console.log('2222',response.data.results)
                 dispatch(setUsersAC(response.data.results))
             });
     }
